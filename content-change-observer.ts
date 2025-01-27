@@ -13,8 +13,8 @@
         });
       }
     });
-    const stepContent = this.el.querySelector('details');
-    if (stepContent) {
+    const mainContent = this.el.querySelector('#main');
+    if (mainContent) {
       mutationObserver.observe(stepContent, { childList: true, subtree: true });
     }
   }
